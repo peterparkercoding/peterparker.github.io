@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peter Parker — Full Stack Developer & Creator of HexCalculator.org</title>
+  <meta name="description" content="Peter Parker is a full stack developer who builds fast, ad-free browser tools and educational web apps. Creator of HexCalculator.org.">
+  <meta name="author" content="Peter Parker">
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Peter Parker — Full Stack Developer, Creator of Tools, Thinker in Code">
+  <meta property="og:description" content="Full stack developer building lightweight, educational, and performance-focused web tools like HexCalculator.org.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hexcalculator.org">
+  <meta property="og:site_name" content="Peter Parker Portfolio">
+
+  <!-- Minimal, accessible styles -->
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121822;
+      --muted: #9fb0c3;
+      --text: #e6edf3;
+      --accent: #66d9ef;
+      --accent-2: #7ee787;
+      --border: #233145;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --radius: 16px;
+      --maxw: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+    header.hero { display: grid; gap: 12px; padding: 48px 0 24px; }
+    header .kicker { color: var(--accent); letter-spacing: .08em; text-transform: uppercase; font-weight: 600; font-size: .875rem; }
+    h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
+    .lead { color: var(--muted); font-size: 1.125rem; max-width: 70ch; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    @media (min-width: 900px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+
+    section { margin: 28px 0; }
+    .card {
+      background: linear-gradient(180deg, var(--card), #0f1520 60%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card h2, .card h3 { margin-top: 0; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 10px; border: 1px solid var(--border);
+      border-radius: 999px; color: var(--muted); font-size: .9rem;
+      background: rgba(255,255,255,.02);
+    }
+    ul.clean { margin: 0; padding-left: 1.2rem; }
+    .feature-list li { margin: .35rem 0; }
+    .stack-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag { border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; color: var(--muted); font-size: .9rem; background: rgba(255,255,255,.02); }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 10px 14px; border-radius: 12px; font-weight: 600; border: 1px solid var(--border);
+      background: #0e1722; color: var(--text); text-decoration: none;
+    }
+    .btn.primary { background: linear-gradient(180deg, #1c2a3a, #102030); border-color: #284563; }
+    .btn:hover { filter: brightness(1.05); text-decoration: none; }
+
+    blockquote {
+      margin: 0; padding: 14px 16px; border-left: 4px solid var(--accent-2);
+      background: rgba(126,231,135,.06); border-radius: 6px; color: var(--text);
+    }
+    footer { margin: 42px 0 28px; color: var(--muted); font-size: .95rem; }
+    hr.sep { height: 1px; background: var(--border); border: none; margin: 28px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <span class="kicker">🧑‍💻 Peter Parker</span>
+      <h1>Full Stack Developer, Creator of Tools, Thinker in Code</h1>
+      <p class="lead">
+        Hi, I’m Peter. I build lightweight, educational, and performance-focused web tools that turn complex ideas into simple, usable experiences. 
+        My work bridges utility and understanding—helping developers, students, and creators learn faster and work smarter.
+      </p>
+      <div class="cta-row" aria-label="Primary actions">
+        <a class="btn primary" href="https://hexcalculator.org" target="_blank" rel="noopener">HexCalculator.org</a>
+      </div>
+    </header>
+
+    <!-- WHAT I CREATE -->
+    <section aria-labelledby="what-i-create">
+      <div class="card">
+        <h2 id="what-i-create">🚀 What I Create</h2>
+        <div class="grid grid-3">
+          <article class="card" aria-labelledby="fullstack">
+            <h3 id="fullstack">Full Stack Web Development</h3>
+            <p>I design responsive, accessible interfaces and build reliable backends using JavaScript, Node.js, and modern web APIs. Code that’s maintainable, modular, and meaningful—end to end.</p>
+            <div class="stack-tags" aria-label="Full stack focus">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="tools">
+            <h3 id="tools">Browser Tool Development</h3>
+            <p>I create fast, ad-free utilities for conversions, calculations, and logic operations. Tools that respect time, teach through interaction, and work beautifully on any device.</p>
+            <div class="stack-tags" aria-label="Tool focus">
+              <span class="tag">Performance</span><span class="tag">Offline-capable</span><span class="tag">A11y-first</span>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="writing">
+            <h3 id="writing">Educational Content & Technical Writing</h3>
+            <p>I write approachable guides on hexadecimal systems, bitwise logic, and semantic HTML—turning complex topics into clear mental models.</p>
+            <div class="stack-tags" aria-label="Writing topics">
+              <span class="tag">Hex / Binary / Decimal</span><span class="tag">Bitwise Ops</span><span class="tag">Semantic HTML</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section aria-labelledby="featured">
+      <div class="card">
+        <h2 id="featured">🌟 Featured Project</h2>
+
+        <article class="card" aria-labelledby="hexcalc">
+          <div class="pill" aria-label="Project type">🔢 Flagship Tool</div>
+          <h3 id="hexcalc">HexCalculator.org</h3>
+          <p>
+            HexCalculator.org is a precise, browser-based utility for developers, cybersecurity experts, and students who work with 
+            <strong>hexadecimal</strong>, <strong>binary</strong>, <strong>decimal</strong>, and <strong>ASCII</strong> systems. 
+            It also supports bitwise logical operations like <em>AND</em>, <em>OR</em>, <em>XOR</em>, and <em>NOT</em>—doubling as both a problem-solver and a learning aid.
+          </p>
+
+          <h4>Built With</h4>
+          <ul class="clean feature-list" role="list">
+            <li>Vanilla JavaScript, Semantic HTML5, CSS Grid</li>
+            <li>Node.js + lightweight caching for offline functionality</li>
+            <li>Responsive UI designed for clarity and precision</li>
+          </ul>
+
+          <h4>Core Features</h4>
+          <ul class="clean feature-list" role="list">
+            <li>Real-time conversion between Hex, Binary, Decimal, and ASCII</li>
+            <li>Bitwise logic calculator for AND, OR, XOR, NOT</li>
+            <li>Mobile-optimized, ad-free, and distraction-free interface</li>
+            <li>Inline explanations that teach the concepts behind each result</li>
+          </ul>
+
+          <h4>Why It Matters</h4>
+          <p>
+            HexCalculator.org is built not just to compute—but to <strong>teach</strong>. It reveals how digital systems represent and transform data, 
+            letting users learn by doing while keeping performance and accessibility front and center.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="https://hexcalculator.org" target="_blank" rel="noopener">Open HexCalculator.org</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section aria-labelledby="philosophy">
+      <div class="card">
+        <h2 id="philosophy">💡 My Development Philosophy</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>1) Minimalism First</h3>
+            <p>Good code is simple code. I ship features that matter, avoid bloat, and keep interfaces clean, fast, and durable.</p>
+          </article>
+          <article class="card">
+            <h3>2) Educational by Design</h3>
+            <p>Every tool should teach through use. If users understand the “why,” they’ll use it better—and learn faster.</p>
+          </article>
+          <article class="card">
+            <h3>3) Accessibility Always</h3>
+            <p>Inclusive by default: semantic markup, color contrast, keyboard support, and robust responsive behavior.</p>
+          </article>
+          <article class="card">
+            <h3>4) End-to-End Clarity</h3>
+            <p>Frontend precision meets backend reliability—so the product looks right, feels right, and <em>thinks</em> right.</p>
+          </article>
+        </div>
+
+        <blockquote>
+          “Good tools don’t just work — they help people understand.” — <strong>Peter Parker</strong>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section aria-labelledby="stack">
+      <div class="card">
+        <h2 id="stack">🧰 Tech Stack & Tools</h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Frontend</h3>
+            <ul class="clean">
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>Tailwind CSS, Bootstrap (when needed)</li>
+              <li>Accessibility (a11y), Performance, PWA basics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Backend</h3>
+            <ul class="clean">
+              <li>Node.js, Express.js</li>
+              <li>REST APIs, Routing, Caching</li>
+              <li>PHP (basic scripting)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Data & Formats</h3>
+            <ul class="clean">
+              <li>MongoDB, SQLite (lightweight apps)</li>
+              <li>JSON, Markdown, YAML</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Platforms & Hosting</h3>
+            <ul class="clean">
+              <li>Netlify, WordPress, Wix, Weebly</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Design & Prototyping</h3>
+            <ul class="clean">
+              <li>Figma, Canva, Framer</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Dev Tools</h3>
+            <ul class="clean">
+              <li>VS Code, GitHub, GitLab, Codeberg, Antopie</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section aria-labelledby="expertise">
+      <div class="card">
+        <h2 id="expertise">🧠 My Expertise</h2>
+        <ul class="clean feature-list">
+          <li>Building full-stack web apps and browser-based tools</li>
+          <li>Real-time converters and logic calculators (Hex / Binary / Decimal / ASCII)</li>
+          <li>Optimized JavaScript for speed and precision</li>
+          <li>Scalable backends with Node.js &amp; Express</li>
+          <li>Responsive, accessible front-end architectures</li>
+          <li>Semantic, maintainable HTML &amp; CSS</li>
+          <li>Educational, open-source utilities and documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section aria-labelledby="mission">
+      <div class="card">
+        <h2 id="mission">🧭 My Mission</h2>
+        <p>
+          I build digital tools that <strong>reduce friction</strong>, <strong>increase clarity</strong>, and <strong>teach through interaction</strong>.
+          Every project—converter, calculator, or guide—aims to be educational, intuitive, and fast.
+        </p>
+        <p>
+          My long-term goal is to grow <strong>HexCalculator.org</strong> into a suite of developer-focused learning utilities—covering color science, data conversions,
+          logic operations, and base systems—always open, accessible, and crafted with care.
+        </p>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <!-- PROFILES -->
+    <section id="profiles" aria-labelledby="profiles-title">
+      <div class="card">
+        <h2 id="profiles-title">📍 Find Me Across the Web</h2>
+        <ul class="clean feature-list" role="list">
+          <li><a href="https://github.com/peterparkercoding" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://codepen.io/coderpeterparker" target="_blank" rel="noopener">CodePen</a></li>
+          <li><a href="https://code.antopie.org/peterparker" target="_blank" rel="noopener">Antopie</a></li>
+          <li><a href="https://codeberg.org/peterparker" target="_blank" rel="noopener">Codeberg</a></li>
+          <li><a href="https://gitlab.com/peterparkercoding" target="_blank" rel="noopener">GitLab</a></li>
+          <li><a href="https://hashnode.com/@coderpeterparker" target="_blank" rel="noopener">Hashnode</a></li>
+          <li><a href="https://dzone.com/users/5360365/coderpeterparker.html" target="_blank" rel="noopener">DZone</a></li>
+          <li><a href="https://discourse.opensourcedesign.net/u/peterparker/summary" target="_blank" rel="noopener">Open Source Design (Discourse)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer role="contentinfo">
+      © <span id="year"></span> Peter Parker. Built with semantic HTML, accessible CSS, and care.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
